@@ -3,11 +3,9 @@ class Node:
     self.data = data
     self.next = None
 
-
 class Stack:
   def __init__(self):
     self.top = None
-  
   def push(self, data) -> None:
     # Write your code here
     new=Node(data)
@@ -19,7 +17,6 @@ class Stack:
     if self.top==None:
       return None
     else:
-     
       temp=self.top
       self.top=self.top.next
       temp.next=None
@@ -34,13 +31,13 @@ class Stack:
     if self.top==None:
       print("None")
     else:
- 
       ptr=self.top
       while(ptr!=None):
         print(ptr.data,end="")
         print("=>",end="")
         ptr=ptr.next
         if(ptr==None):
+          print("None")
           print("None")
 # Do not change the following code
 stack = Stack()

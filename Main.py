@@ -3,9 +3,10 @@ class Node:
     self.data = data
     self.next = None
 
+
 class Stack:
   def __init__(self):
-    self.top = None
+    self.top = None 
   def push(self, data) -> None:
     # Write your code here
     new=Node(data)
@@ -38,7 +39,6 @@ class Stack:
         ptr=ptr.next
         if(ptr==None):
           print("None")
-          
 # Do not change the following code
 stack = Stack()
 operations = []
@@ -49,6 +49,6 @@ data = input_data.split(',')
 for i in range(len(operations)):
   if operations[i] == "push":
     stack.push(int(data[i]))
-  elif operations[] == "pop":
+  elif operations[i] == "pop":
     stack.pop()
 stack.status()
